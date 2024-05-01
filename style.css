@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#ffffff;
+    --secondary-text-color: rgb(226, 255, 183);
+    --accent-color:#2294ed;
+    --accent-color-dark:#102434;
+}
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--primary-text-color);
+    background-color: black;
+}
+p{
+
+  font-family: "Roboto Condensed", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 1.6rem;
+    color: var(--primary-text-color);
+    text-shadow: 1px 1px 0.2px rgb(255, 255, 255);
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: #37393b;
+    box-shadow: 0 0 4px #b8c8d6;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-links ul{
+    gap: 10px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color: greenyellow;
+}
+.hover-link:active{
+    color: red;
+}
+.nav-item{
+    transition:  ease-in-out;
+}
+.nav-item.active{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+
+.new-input{
+    width:200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    box-shadow: 0 0 0.2px gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+.search-button{
+    background-color: rgb(110, 154, 43);
+    color: white;
+    font-weight: 550;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.search-button:hover{
+    box-shadow: 0 0 5px rgb(36, 48, 26);
+    background-color: rgb(44, 74, 0);
+}
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0px 0px 4px #121314;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #2c2a2a;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    box-shadow:1px 1px 8px  #2e3a44;
+    background-color: #171818;
+    transform: translateY(-2px);
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news-source{
+    margin-block: 12px;
+}
